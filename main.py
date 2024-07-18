@@ -72,6 +72,7 @@ def calculateEverythingForBarChart(model_choice, text_input, text_output):
     elif model_choice =="gpt-3.5-turbo-0125":
         modelInputCost = 0.0005
         modelOutputCost = 0.0015
+        cost = calculateTotalCost(calculateInputCost(text_input), calculateOutputCost(text_output))
     elif model_choice == "gpt-4o-mini":
         modelInputCost = 0.00015
         modelOutputCost = 0.0006   
